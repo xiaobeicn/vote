@@ -11,7 +11,7 @@ class Vote {
     public $_member = '';
 
     /**
-     * eg. Web_Vote::getInstance()->setModule('ulive')->setSessionid($sid)->setMember($qargs['uliveid'])->up();
+     * eg. Web_Vote::getInstance()->setModule('m')->setSessionid($sid)->setMember('id')->up();
      */
     private function __construct() {
         $this->_redis = (new Redis())->connect('127.0.0.1', 6379)->select(6);
