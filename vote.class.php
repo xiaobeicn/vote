@@ -87,7 +87,7 @@ class Vote {
                 // 'ip' => getIp(),
                 'time' => time()
             ];
-            // 记录mongo日志
+            // 记录日志 TODO...
             
             return true;
         }
